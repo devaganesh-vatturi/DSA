@@ -1,3 +1,4 @@
+//count number of digits for a entered number
 import java.util.*;
 public class CountDigit {
     public static void main(String args[])
