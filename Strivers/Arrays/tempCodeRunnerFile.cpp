@@ -1,0 +1,1 @@
+reverse(nums.begin(),nums.end());
