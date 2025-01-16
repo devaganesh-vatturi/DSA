@@ -1,1 +1,4 @@
-reverse(nums.begin(),nums.end());
+ for(int i:nums)
+//    {
+//     cout<<i<<" ";
+//    }
