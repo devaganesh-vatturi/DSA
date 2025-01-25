@@ -3,21 +3,18 @@
 using namespace std;
 int main()
 {
-    vector<int> nums={1,2,3,3,4,4,5,6,7,9};
+    vector<int> nums={1};
     int i=0;
     int n=nums.size();
-    for(int j=1;j<n;j++)
+    for(int j=0;j<n;j++)
     {
-        if(nums[i]!=nums[j]){
-             i++;
-             nums[i]=nums[j];
-             
+      
+        if(j<n-1 && nums[j]==nums[j+1])
+        {
+         continue;
         }
+        nums[i++]=nums[j];
     }
-  for(int k=0;k<=i;k++)
-  {
-    cout<<nums[k]<<endl;
-  }
-   
+   cout<<i<<endl;
    return 0;
 }
