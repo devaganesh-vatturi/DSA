@@ -3,7 +3,9 @@ using namespace std;
 
 int main() {
     int n = 5;
-    vector<vector<int>> arr(n); // Create outer vector with 'n' rows
+    vector<vector<int>> arr;
+    arr.resize(n);
+ // Create outer vector with 'n' rows
 
     // Resize each inner vector to the correct size
     for (int i = 0; i < n; i++) {

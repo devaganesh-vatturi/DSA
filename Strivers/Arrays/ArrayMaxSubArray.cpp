@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     vector <int> nums={-1};
-    int max=INT_MIN,min=INT_MIN,sum=0;
+    int max=INT_MIN,sum=0;
     for(int i=0;i<nums.size();i++)
     {
     sum+=nums[i];
@@ -14,6 +14,5 @@ int main()
        sum=0;   
     }
     cout<<max<<endl;
-    cout<<min<<endl;
     return 0;
 }
