@@ -15,7 +15,7 @@ int main()
     vector <int> ar1;
     vector <int> ar2;
     for( i=0;i<matrix.size();i++)
-    {
+    {   
         for(j=0;j<matrix[i].size();j++)
         {
             if(matrix[i][j]==0)

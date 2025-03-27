@@ -14,7 +14,6 @@ int main()
      {
         for(int j=0;j<matrix[i].size();j++)
         {
-            // cout<<matrix[i][j];
              m1[j].push_back(matrix[i][j]);
         }
      }
