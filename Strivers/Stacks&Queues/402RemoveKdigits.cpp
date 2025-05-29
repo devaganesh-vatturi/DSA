@@ -18,7 +18,7 @@ using namespace std;
 int main()
 {
     stack <int> st;
-    string num="100200";
+    string num="10";
     int n=num.size();
     int k=1;
     
