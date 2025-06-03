@@ -55,6 +55,8 @@ int main()
 // mp.insert({2,"hii"});
 // mp.emplace(1,"hello"); //EMPLACE IS MORE EFFECIENT THEN INSERT
 // mp.emplace(2,"hiiiiii");
+// if (mp.find(2) != mp.end()) {
+//     cout << "Found" << endl;
 // for(auto a:mp)
 // {
 //     cout<< a.first<<a.second<<"\t"<<endl;
