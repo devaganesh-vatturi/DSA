@@ -16,26 +16,28 @@
 using namespace std;
 int main()
 {
-    map <char,int> mp;
-    int p=0,q=0,ind=0,len=0,maxi=0;
-    string s="tmmzuxt";
-    for(char c:s)
+  set <int> sets;
+  string s="abcabcbb";
+  int r=0,l=0;
+  int maxi=0;
+  while(r<s.size())
+  {
+    if(sets.find(s[r])!=sets.end())
     {
-        if(mp.find(c)==mp.end())
-        {
-            mp.insert({c,ind});
-            ind++;q++;
-            len=q-p;
-        }
-        else if(p<mp[c]){
-                q++;ind++;
-                p=mp[c]+1;
-                mp[c]=ind;
-                len=q-p;
+        while(s[r]!=s[l]){
            
+            sets.erase(s[l]);
+            l++;
         }
-        maxi=max(maxi,len);
+        sets.erase(s[l]);
+        l++;
     }
-    cout<<maxi<<endl;
-    return 0;
+   sets.insert({s[r]});
+   
+   maxi=max(maxi,((r-l)+1));
+    r++;
+      
+
+  }
+  cout<<maxi<<" ";
 }
