@@ -4,10 +4,9 @@ using namespace std;
 class NewClass{
     public:
        int data=10;
-       int rollno;
+       static int rollno;
        void getdata();
 };
-
 void NewClass :: getdata()
 {
     cout<<"data is"<<data<<endl;
